@@ -1,0 +1,31 @@
+/*------------------------------------------
+ Error Message
+-------------------------------------------*/
+
+.error-message {
+	display: none;
+	padding: rem(30);
+	margin: 0 auto rem(40);
+	text-align: left;
+	background: $error-message-background;
+	outline: 1px solid rgb(77, 144, 254);
+	&.active {
+		display: block;
+	}
+	&__title {
+		margin: 0 0 rem(15);
+		font-size: rem(16);
+	}
+	ul {
+		padding: 0 0 0 15px;
+		margin: 0;
+		li {
+			margin: 0 0 rem(10);
+			font-size: rem(14);
+			color: $error-message-list;
+			a {
+				color: $error-message-list;
+			}
+		}
+	}
+}
